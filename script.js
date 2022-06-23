@@ -40,7 +40,7 @@ int = setInterval( function () {
 	const countDown = dest,
 		distance = countDown - todayTime;
 
-	document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+	document.getElementById("minutes").innerText = Math.floor(distance / minute),
 		document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
 	if (distance < 0) {
